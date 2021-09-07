@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.controls {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 4px;
+}
+.controls svg {
+  cursor: pointer;
+  color: #151a1e;
+}
+.chatIcon {
+  margin-bottom: 20px;
+}
+.syncIcon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.liveChats {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 350px;
+  height: 97.5%;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.1s, opacity 0.1s;
+}
+.showChat {
+  opacity: 1;
+  visibility: visible;
+}
+.chatTopBar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  box-shadow: 0 0 5px 0px #9c9c9c;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 5px;
+  color: #151a1e;
+}
+.closeIcon {
+  cursor: pointer;
+  position: absolute;
+  left: 5%;
+  color: #151a1e;
+}
+.chatHeading {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Glory', sans-serif;
+}
+.chats {
+  height: calc(100% - 115px);
+  padding: 12px;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  background: #f2f5f8;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+}
+.chatAvatar {
+  margin-right: 10px;
+  width: 27.5px;
+  height: 27.5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatAvatar img {
+  width: 17.5px;
+}
+.chatContent {
+  font-family: 'Urbanist', sans-serif;
+  letter-spacing: 0.5px;
+}
+.chatBox {
+  display: flex;
+  height: 55px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -3px 5px;
+}
+.chatInput {
+  padding: 15px 20px;
+  height: 100%;
+  width: 85%;
+  outline: none;
+  border: none;
+}
+.chatButton {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(97, 97, 255);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
